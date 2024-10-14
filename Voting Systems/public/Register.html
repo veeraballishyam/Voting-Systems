@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Register</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="registerform">
+        <h1>Registration Form</h1>
+        <form action="/register" method="POST">
+            <input type="text" name="FullName" required placeholder="Full Name"><br>
+            <input type="tel" name="MobileNo" pattern="[1-9]{1}[0-9]{9}" maxlength="10" required placeholder="Mobile No"><br>
+            <input type="text" name="VoterID" required placeholder="Voter ID"><br>
+            <input type="email" name="Email" required placeholder="Email"><br>
+            <input type="date" name="DOB" required placeholder="Date of Birth"><br>
+            <input type="password" name="Password" required placeholder="Password"><br>
+            <input type="password" name="RePassword" required placeholder="Re-enter Password"><br>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </div>
+
+    <button class="open-button" onclick="back()">Back</button>
+
+    <script>
+        function back() {
+            window.location = "/";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Admin Panel</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/ap.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <h4>Admin Panel</h4>
+    <a href="#">Dashboard</a>
+    <a href="admintable.html">Admin Table</a>
+    <a href="adminResult.html">Admin Result</a>
+  </div>
+
+  <div class="content">
+    <h2>Profile:</h2>
+    <p id="date"></p>
+    <hr>
+    <div class="main-body">
+      <div class="row gutters-sm">
+        <div class="col-md-4 mb-3">
+          <div class="card1">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center text-center">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                <div class="mt-3">
+                  <h4 id="fullName"></h4>
+                  <p class="text-secondary mb-1">Full Stack Developer</p>
+                  <a href="#" class="btn btn-primary">Voting</a>
+                  <a href="#" class="btn btn-danger">Voting Stop</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h5 class="mb-0">Full Name</h5>
+                </div>
+                <div class="col-sm-9 text-secondary" id="fullName"></div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h5 class="mb-0">Email</h5>
+                </div>
+                <div class="col-sm-9 text-secondary" id="email"></div>
+              </div>
+              <hr>
+
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="form-container">
+      <form action="" method="POST" enctype="multipart/form-data">
+        <h4 style="font-weight: bold;">Add Participants:</h4>
+        <hr>
+        <label for="FullName"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Name" name="FullName" required>
+
+        <label for="PartyName"><b>Party Name</b></label>
+        <input type="text" placeholder="Enter Party Name" name="PartyName" required>
+
+        <label for="Image"><b>Custom Image</b></label>
+        <input type="file" name="Image" accept="image/*">
+        <hr>
+        <button type="submit" name="submit">Register</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="btn-back" onclick="back()">Back</button>
+</body>
+
+</html>

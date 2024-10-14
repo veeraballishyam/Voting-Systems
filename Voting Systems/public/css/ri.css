@@ -1,0 +1,17 @@
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x:auto;
+}
+.row .card{
+  position: static;
+}
+div .card {
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 5px 6px 20px lightseagreen;
+}

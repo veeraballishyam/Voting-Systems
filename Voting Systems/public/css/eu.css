@@ -1,0 +1,93 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('images/voting7.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.registerform {
+  max-width: 550px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.registerform h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e83e0a;
+  font-weight: bold;
+}
+
+.registerform input[type="text"],
+.registerform input[type="tel"],
+.registerform input[type="email"],
+.registerform input[type="date"],
+.registerform input[type="password"],
+.registerform button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.registerform input[type="text"]:focus,
+.registerform input[type="tel"]:focus,
+.registerform input[type="email"]:focus,
+.registerform input[type="date"]:focus,
+.registerform input[type="password"]:focus {
+  border-color: #e43213;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.registerform button {
+  background-color: #e74e0c;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registerform button:hover {
+  background-color: #e63f0c;
+}
+
+.open-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #eb4007;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.open-button:hover {
+  background-color: #df3011;
+}
+
+@media (max-width: 768px) {
+  .registerform {
+      padding: 20px;
+  }
+
+  .registerform button {
+      font-size: 16px;
+  }
+}

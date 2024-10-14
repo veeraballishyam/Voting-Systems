@@ -1,0 +1,80 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('images/voting6.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.registerform {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.registerform h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.registerform img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.registerform input[type="text"],
+.registerform input[type="file"],
+.registerform button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+}
+
+.registerform input[type="text"]:focus,
+.registerform input[type="file"]:focus {
+  border-color: #f06b6b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(240, 107, 107, 0.5);
+}
+
+.registerform button {
+  background-color: #f06b6b;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registerform button:hover {
+  background-color: #c75757;
+}
+
+@media (max-width: 768px) {
+  .registerform {
+      margin: 40px auto;
+      padding: 20px;
+  }
+
+  .registerform button {
+      font-size: 16px;
+  }
+}

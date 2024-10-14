@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Edit User</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/eu.css">
+</head>
+
+<body>
+    <div class="registerform">
+        <h1>Edit User</h1>
+        <form action="/editUser/{{userId}}" method="POST" class="registerform">
+            <h1>Edit User</h1>
+
+            <input type="text" name="FullName" placeholder="Full Name" required>
+            <input type="tel" name="MobileNo" placeholder="Mobile Number" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="date" name="DOB" required>
+            <input type="password" name="Password" placeholder="New Password">
+
+            <button type="submit">Submit</button>
+          </form>
+
+          <a href="/admintable">Back</a>
+    </div>
+
+    <button class="open-button" onclick="back()">Back</button>
+
+    <script>
+        function back() {
+            window.location = "adminPanel.php";
+        }
+    </script>
+</body>
+
+</html>

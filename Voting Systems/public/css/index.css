@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.bg {
+  background-image: url("Images/voting1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(31, 110, 116);
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  padding: 4px 15px;
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Rancho', cursive;
+  border-radius: 20px;
+}
+
+.header ul li a:hover {
+  background: black;
+}
+
+.cent {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Aligns children elements vertically */
+}
+
+section #text {
+  color: rgb(138, 14, 14);
+  font-size: 8vw;
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Rancho', cursive;
+  text-shadow: 7px 5px 5px rgb(247, 129, 32);
+}
+
+section #text:hover {
+  animation: vote 0.5s ease-out;
+}
+
+@keyframes vote {
+  0% {}
+
+  50% {
+    font-size: 10vw;
+  }
+
+  100% {}
+}
+
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  background: black;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  margin-top: 20px;
+  /* Add space above the button */
+}
+
+#btn:hover {
+  box-shadow: 5px 5px 10px gray;
+}

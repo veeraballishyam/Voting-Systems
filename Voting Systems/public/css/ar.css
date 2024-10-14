@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.progress {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  text-align: center;
+  line-height: 30px; /* Align text vertically */
+  color: #fff;
+  background-color: #007bff;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.btn {
+  border-radius: 5px;
+  margin: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  color: #fff;
+}

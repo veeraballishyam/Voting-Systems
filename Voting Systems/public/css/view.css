@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.third{
+    background-image: url("Images/Result.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.third h1 {
+    font-size: 50px;
+    margin: 20px 20px;
+    color: rgb(186, 88, 22);
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background: linear-gradient(to right, #865f5a, #d7e1d9); /* new gradient */
+}
+
+  .card a {
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    font-size: 18px;
+  }
+  .card a:hover {
+    opacity: 0.7;
+  }
+
+
+footer{
+    padding: 20px;
+    margin: 0px;
+    background: cadetblue;
+}
+.sociallogo{
+    text-align: center;
+    padding: 10px;
+}
+.sociallogo a{
+    margin: 7px;
+    color: #111111;
+    position: relative;
+}
+.sociallogo a:hover{
+    color: aqua;
+}
+@media screen and (max-width:620px) {
+    section #text{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width:480px) {
+
+    .header .logo{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .header ul li{
+        margin-left: 5px;
+    }
+    .header ul li a{
+        padding: 6px 10px;
+        font-size: 20px;
+    }
+    section #text{
+        font-size: 60px;
+    }
+
+}

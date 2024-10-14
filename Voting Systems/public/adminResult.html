@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin Result</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/ar.css">
+</head>
+
+<body>
+
+    <div class="container content">
+        <h2 class="text-center" style="font-weight: bold;">Result Progress</h2>
+        <hr>
+        <h4><b>Party Name:</b></h4>
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%;">50%</div>
+        </div>
+
+        <hr>
+        <h2 class="text-center" style="font-weight: bold;">Declared Winner</h2>
+        <hr>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Party Name</th>
+                    <th>Votes</th>
+                    <th>Image</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Narendra Modi</td>
+                    <td>BJP</td>
+                    <td>100</td>
+                    <td><img src="images/person1.jpg" style="width: 100px; height: 100px;"></td>
+                    <td>ON</td>
+                    <td>
+                        <a href="#" class="btn btn-primary" title="Declared"><i class="fas fa-bullhorn"></i></a>
+                        <a href="#" class="btn btn-danger" title="UnDeclared"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

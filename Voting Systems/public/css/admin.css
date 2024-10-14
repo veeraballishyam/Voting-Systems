@@ -1,0 +1,58 @@
+body{
+  background-image:url("Images/voting4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.login h1{
+  padding: 10px 50px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2em;
+  background-color: rgb(139, 138, 149);
+}
+form{
+  padding-top: 30px;
+  text-align: center;
+}
+.login input{
+  height: 10px;
+  width: 400px;
+  padding: 2%;
+  margin: 2%;;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  background: rgb(196, 203, 203);
+  border: none;
+  border-radius: 8px;
+}
+form button{
+  background-color: #1bce21;
+  color: rgb(190, 53, 53);
+  padding: 16px 20px;
+  margin: 20px ;
+  border: none;
+  cursor: pointer;
+  width: 400px;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+form button:hover{
+  font-weight: bold;
+  color: black;
+  opacity: 1;
+}
+form a{
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+form a:hover{
+  color: green;
+}

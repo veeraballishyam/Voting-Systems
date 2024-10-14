@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin Panel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/at.css">
+</head>
+
+<body>
+
+    <div class="content">
+        <div style="overflow-x:auto;">
+            <h2 class="page-title">User Data Table</h2>
+            <hr>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>DOB</th>
+                        <th>Password</th>
+                        <th>Voted Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-transform: capitalize;">Sushanth</td>
+                        <td>1234567890</td>
+                        <td>chinni@gmail.com</td>
+                        <td>1990-01-01</td>
+                        <td>••••••</td>
+                        <td>Voted</td>
+                        <td>
+                            <a href="EditUser.html" class="btn btn-primary" title="Edit"><i class="fas fa-pen"></i></a>
+                            <a href="#" class="btn btn-danger" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <div style="overflow-x:auto;">
+            <h2 class="page-title">Nominee Data Table</h2>
+            <hr>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Party Name</th>
+                        <th>Image</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="text-transform: capitalize;">
+                        <td>Narendra Modi</td>
+                        <td>BJP</td>
+                        <td><img src="images/person1.jpg" style="width: 100px; height: 100px;"></td>
+                        <td>
+                            <a href="EditNominee.html" class="btn btn-primary" title="Edit"><i class="fas fa-pen"></i></a>
+                            <a href="#" class="btn btn-danger" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Election Ballot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/polls.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Election Ballot</h1>
+
+        <form action="/vote" method="POST">
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Party Name</th>
+                <th>Vote</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- This section will be populated dynamically with candidate data -->
+              {{#each candidates}}
+              <tr>
+                <td><img src="{{this.image_path}}" alt="{{this.party_name}} Logo"></td>
+                <td>{{this.party_name}}</td>
+                <td>
+                  <input type="radio" name="candidate_id" value="{{this.id}}" required>
+                </td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+          <input type="hidden" name="user_id" value="{{user_id}}">
+          <button type="submit">Submit Vote</button>
+        </form>
+      </div>
+
+    <script>
+        fetch('/api/candidates')
+            .then(response => response.json())
+            .then(candidates => {
+                const candidateList = document.getElementById('candidateList');
+                candidates.forEach(candidate => {
+                    const row = `
+                        <tr>
+                            <td><img src="${candidate.image_path}" alt="${candidate.party_name}" style="width: 100px; height: 100px;"></td>
+                            <td>${candidate.party_name}</td>
+                            <td><button onclick="vote(${candidate.id})" class="btn btn-primary vote-button">Vote</button></td>
+                        </tr>
+                    `;
+                    candidateList.innerHTML += row;
+                });
+            });
+
+        function vote(candidateId) {
+            // In a real application, you'd get the user_id from the session
+            const userId = 1; // Placeholder user ID
+            fetch('/vote', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ user_id: userId, candidate_id: candidateId }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    alert('Vote recorded successfully');
+                    window.location.href = '/home';
+                }
+            });
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
